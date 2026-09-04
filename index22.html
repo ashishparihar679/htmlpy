@@ -1,0 +1,73 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        *{
+            margin: 0;
+        }
+        .main{
+            width: 100%;
+            height: 100vh;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            background-color: black;
+        }
+        .bol{
+            width: 150px;
+            height: 150px;
+            border: 4px;
+            background-color: red;
+            border-radius: 50%;
+            /* margin: 5px; */
+            animation: bounce 1000ms ease-in-out alternate infinite;
+        }
+        @keyframes bounce {
+            from{
+                transform: translateY(200px);
+                
+            }
+            to{
+                transform: translateY(-200px);
+                background-color: rgb(228, 29, 165);
+
+            }
+        }
+        .main>.bol:nth-child(1){
+            animation-delay: 100ms;
+        }
+        .main>.bol:nth-child(2){
+            animation-delay: 200ms;
+        }
+        .main>.bol:nth-child(3){
+            animation-delay: 300ms;
+        }
+        .main>.bol:nth-child(4){
+            animation-delay: 400ms;
+        }
+        .main>.bol:nth-child(5){
+            animation-delay: 500ms;
+        }
+        .main>.bol:nth-child(6){
+            animation-delay: 600ms;
+        }
+        .main>.bol:nth-child(7){
+            animation-delay: 700ms;
+        }
+    </style>
+</head>
+<body>
+    <div class="main">
+        <div class="bol"></div>
+        <div class="bol"></div>
+        <div class="bol"></div>
+        <div class="bol"></div>
+        <div class="bol"></div>
+        <div class="bol"></div>
+        <div class="bol"></div>
+    </div>
+</body>
+</html>
